@@ -1,0 +1,94 @@
+OMP: Warning #181: OMP_STACKSIZE: ignored because KMP_STACKSIZE has been defined
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+                  R2019a (9.6.0.1072779) 64-bit (glnxa64)
+                               March 8, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[Warning: "/glade/u/home/apinard/Code/TSMX" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Contrast Variance" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Contrast Variance/old" not found in
+path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Error Correlations" not found in
+path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Exploratory Analysis" not found in
+path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Gradient" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Gradient/old" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Mean Errors" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Min_Max MAE" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Original Correlations" not found in
+path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Seasonality" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Seasonality/old" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Standard Deviations" not found in
+path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Time Series" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/TSMX/Z_Score" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 8)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/PRECT" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 9)
+  In run (line 91)] 
+[Warning: "/glade/u/home/apinard/Code/PRECT/old" not found in path.] 
+[> In rmpath (line 71)
+  In build_graphs (line 9)
+  In run (line 91)] 
+
+ans =
+
+    '/glade/p/cisl/iowa/abaker_carleton/initial_with_error/ts/orig/b.e11.B20TRC5CNBDRD.f09_g16.030.cam.h1.TS.19200101-20051231.nc'
+
+
+N =
+
+       31390
+

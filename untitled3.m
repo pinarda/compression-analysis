@@ -1,0 +1,1 @@
+model_lat = ncread('/Users/alex/Dropbox/newCode/Data/b.e11.B20TRC5CNBDRD.f09_g16.030.cam.h1.TS.19200101-20051231.nc', 'lat');
