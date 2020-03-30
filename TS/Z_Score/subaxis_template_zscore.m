@@ -1,6 +1,6 @@
-% Creates a 4x2 plot of z-scores for TS errors used in the technote. ZFP is 
-% on the right and SZ is on the left. Tolerance levels of 1.0, 0.5, 0.1,
-% and 0.01 are included from top to bottom. Each plot contains the 
+% Creates a 5x2 plot of z-scores for TS errors used in the technote. ZFP is 
+% on the right and SZ is on the left. Tolerance levels of 1.0, 0.1,
+% 0.01, 0.001, and 0.0001 are included from top to bottom. Each plot contains the 
 % threshold for z-scores to be considered significant and the percent of 
 % points that are significant in the title.
 function[] = subaxis_template_zscore(diff_datas, alg_prefix_list, tol_list_sz, tol_list_zfp, save_dir, N, nLat, nLon, variable)

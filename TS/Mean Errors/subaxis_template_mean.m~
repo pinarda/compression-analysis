@@ -1,4 +1,4 @@
-% Creates a 5x2 plot of the mean of TS errors used in the technote. On the 
+% Creates a 4x2 plot of the mean of TS errors used in the technote. On the 
 % left is the sz algorithm and on the right is the zfp algorithm. The 
 % tolerance levels that were included are 1.0, 0.1, and 0.01, 0.001, and 0.0001 from top 
 % to bottom. The overall mean is included in the title of each of the plots.

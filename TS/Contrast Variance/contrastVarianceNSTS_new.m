@@ -1,5 +1,6 @@
-% This code plots EW Contrast Variances and gives the ratio of the pooled
+% This code plots NS Contrast Variances and gives the ratio of the pooled
 % variance to the pooled variance of the original data.
+
 function[] = contrastVarianceNSTS_new(orig_data, compressed_datas, alg_prefix_list, tol_list_sz, tol_list_zfp, nLat, nLon, obs, save_dir, days, mo_length)
 
     %%Load Land Fractions
@@ -103,8 +104,6 @@ function[] = contrastVarianceNSTS_new(orig_data, compressed_datas, alg_prefix_li
             text(-3.1,1.6, ['Ratio:', num2str(varRatio, 4), ...
                     ' (Land:', num2str(landRatio, 4),  ...
                     ' Sea:', num2str(seaRatio, 4), ')'], 'FontSize', 7);
-            %colormap(flipud('gray'))
-            %caxis([-cbar_max(j,i), cbar_max(j,i)])
             if j == length(tol_list)
                 originalSize = get(gca, 'Position');
                 C2 = colorbar('southoutside', 'FontSize', 5);

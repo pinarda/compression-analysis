@@ -1,6 +1,6 @@
-% Creates a 4x2 plot of the standard deviations for TS errors used in the 
+% Creates a 5x2 plot of the standard deviations for TS errors used in the 
 % technote. ZFP is on the right and SZ is on the left. Tolerance levels of 
-% 1.0, 0.5, 0.1, and 0.01 are included from top to bottom. Each plot 
+% 1.0, 0.1, 0.01, 0.001, and 0.0001 are included from top to bottom. Each plot 
 % contains the pooled standard deviation in the title.
 
 

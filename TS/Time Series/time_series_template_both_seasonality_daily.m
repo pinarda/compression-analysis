@@ -1,10 +1,10 @@
-%Creates the error time series plot for sz for TS used in the technote. On the
+%Creates the error time series plot for sz overlaid with zfp for TS used in the technote. On the
 %right is the first 3 years of the time series, in the middle is the
 %histogram of the entire time series, and on the right is the periodogram
 %of the time series. The z-score, mean, and standard deviation of the time
 %series is also included to the right.
 
-function[] = time_series_template_sz_seasonality_daily(diff_data_1, diff_data_2, diff_data_name_1, diff_data_name_2, model_lat, model_lon, save_dir, n_frames, lat, lon)
+function[] = time_series_template_both_seasonality_daily(diff_data_1, diff_data_2, diff_data_name_1, diff_data_name_2, model_lat, model_lon, save_dir, n_frames, lat, lon)
     %% SZ Time Series 
 
     N =  n_frames;

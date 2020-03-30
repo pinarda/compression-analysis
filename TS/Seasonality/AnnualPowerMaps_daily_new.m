@@ -1,7 +1,7 @@
-% Creates a 4x2 plot of the amplitudes of the error annual harmonic
+% Creates a 5x2 plot of the amplitudes of the error annual harmonic
 % relative to the 50 frequencies around the 50 frequencies around the
 % annual frequency for TS errors used in the technote. On the left is sz 
-% and on the right is zfp. Error tolerances of 1.0, 0.5, 0.1, and 0.01 are 
+% and on the right is zfp. Error tolerances of 1.0, 0.1, 0.01, 0.001, 0.0001 are 
 % included from top to bottom. Locations marked as significant are marked 
 % with a dot and the percent of points that are significant are given in 
 % the title of each graph.

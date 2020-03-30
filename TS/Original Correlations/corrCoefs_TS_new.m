@@ -1,7 +1,7 @@
-% Creates a 4x2 plot of the lag-1 correlations of the first differances of
+% Creates a 5x2 plot of the lag-1 correlations of the first differances of
 % the deseasonalized TS values for the technote. At the top is the original
 % data, on the left is the sz algorithm, and on the right is the zfp
-% algorithm. Tolerance levels of 1.0, 0.5, 0.1, and 0.01 are included from
+% algorithm. Tolerance levels of 1.0, 0.1, 0.01, 0.001, and 0.0001 are included from
 % top to bottom. 
 function[] = corrCoefs_TS_new(orig_data, compress_datas, alg_prefix_list, tol_list_sz, tol_list_zfp, save_dir, N, nLat, nLon, variable)
 
