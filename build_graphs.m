@@ -8,9 +8,6 @@ addpath('/glade/u/home/apinard/Code/');
 % add the path of matlab packages/functions
 addpath('/gpfs/u/home/apoppick/MATLABPackages/b2r');
 addpath('/gpfs/u/home/apoppick/MATLABPackages/subaxis');
-addpath('/glade/u/home/apinard/Code/MatLabFunctions/autocorr_matrix');
-addpath('/glade/u/home/apoppick/MATLABPackages/freezeColors');
-addpath('/glade/u/home/apoppick/MATLABPackages/cm_and_cb_utilities');
 addpath('/glade/u/home/apinard/Code/MatLabFunctions/cmocean');
 addpath('/glade/u/home/apinard/Code/MatLabFunctions/latexTable');
 

@@ -1,7 +1,6 @@
-% Plot of seasonal cycles for TS for two locations used in the technote.
-% The top graphs are from a location in Antarctica using the zfp algorithm
-% and the bottom graphs are from a location in Canada using the sz
-% algorithm. The left graphs show the seasonal cycles and the right graphs
+% Plot of seasonal cycles for TS for the locations used in the paper.
+% The graphs are from a location at the North Pole.
+% The left graphs show the seasonal cycles and the right graphs
 % show the error seasonal cycles.
 
 function[] = TwoLocations_seasonalPlot(orig_data, compress_datas, alg_prefix_list, tol_list_sz, tol_list_zfp, model_lat, model_lon, save_dir, variable, lat, lon)
