@@ -1,11 +1,12 @@
 %Plots odds ratio of positive rainfall
 
-function[] = dailyRainfall_oddsRain_smallThreshold(save_dir, data_dir)
+function[] = dailyRainfall_oddsRain(save_dir)
+    clear *
 
     addpath('/glade/u/home/apoppick/MATLABPackages/b2r');
     addpath('/glade/u/home/apoppick/MATLABPackages/subaxis');
 
-    wd = data_dir;
+    wd = '/glade/p/cisl/iowa/abaker_carleton/';
 
     variable = 'PRECT';
 
@@ -167,7 +168,7 @@ function[] = dailyRainfall_oddsRain_smallThreshold(save_dir, data_dir)
     end
 
     set(gcf,'Units', 'inches', 'Position', [0 0 7 6], 'PaperUnits','inches','PaperPosition', [0 0 7 6])
-    save_path_OR = strcat(save_dir, 'OR_array_smallThreshold.png');
+    save_path_OR = save_dir;
     print(save_path_OR, '-dpng', '-r300')
     close
 end
