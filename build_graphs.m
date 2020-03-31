@@ -124,5 +124,9 @@ for i = 1:length(variable_list)
         makeTimeSeriesPlots(model_lat(144), model_lon(69), model_lat(84), model_lon(64), variable, data_dir, save_dir)
         % Figure 15
         dailyRainfall_oddsRain(orig_data('orig'), compressed_data, algorithms, N, save_dir)
+        % Figure 16
+        dailyRainfall_oddsRain_smallThreshold
+        % Figure 17
+        dailyRainfall_avgError
     end
 end
