@@ -51,25 +51,25 @@ function[] = makeTimeSeriesPlots(MN_lat, MN_lon, Ocean_lat, Ocean_lon, variable,
 
     subplot(2,2,1)
     plot(1:50, MN_orig(1:50), '+-k', 'MarkerSize', 10, 'LineWidth', 2, 'MarkerIndices', 1:5:50); hold on
-    title(['      Lat ', num2str(round(MN_lat,2)), ' Lon ', num2str(MN_lon), ', SZ'],'interpreter','latex')
+    title(['      Lat ', num2str(round(MN_lat,2)), ' Lon ', num2str(MN_lon), ', sz'])
     xlabel('Time')
     ylabel('PRECT')
 
     subplot(2,2,2)
     plot(1:50, MN_orig(1:50), '+-k', 'MarkerSize', 10, 'LineWidth', 2, 'MarkerIndices', 1:5:50); hold on
-    title(['  Lat ', num2str(round(MN_lat,2)), ' Lon ', num2str(MN_lon), ', ZFP'],'interpreter','latex')
+    title(['  Lat ', num2str(round(MN_lat,2)), ' Lon ', num2str(MN_lon), ', zfp'])
     xlabel('Time')
     ylabel('PRECT')
 
     subplot(2,2,3)
     plot(1:50, Ocean_orig(1:50), '+-k', 'MarkerSize', 10, 'LineWidth', 2, 'MarkerIndices', 1:5:50); hold on
-    title(['  Lat ', num2str(round(Ocean_lat,2)), ' Lon ', num2str(Ocean_lon), ', SZ'],'interpreter','latex')
+    title(['  Lat ', num2str(round(Ocean_lat,2)), ' Lon ', num2str(Ocean_lon), ', SZ'])
     xlabel('Time')
     ylabel('PRECT')
 
     subplot(2,2,4)
     plot(1:50, Ocean_orig(1:50), '+-k', 'MarkerSize', 10, 'LineWidth', 2, 'MarkerIndices', 1:5:50); hold on
-    title_obj = title(['  Lat ', num2str(round(Ocean_lat,2)), ' Lon ', num2str(Ocean_lon), ', ZFP'],'interpreter','latex')
+    title_obj = title(['  Lat ', num2str(round(Ocean_lat,2)), ' Lon ', num2str(Ocean_lon), ', zfp'])
     xlabel('Time')
     ylabel('PRECT')
 

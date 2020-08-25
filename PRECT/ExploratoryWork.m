@@ -108,6 +108,7 @@ function [] = ExploratoryWork(orig_data, compressed_datas, alg_prefix_list, tol_
             SummaryTable(TableRow, 5) = sqrt(mean(diff_data.^2));
             SummaryTable(TableRow, 6) = mean(compress_data > 0);
             SummaryTable(TableRow, 7) = mean(compress_data < 0);
+            SummaryTable(TableRow, 8) = max(diff_data(:));
 
             disp([alg_prefix, tol_list{tol_j}])
             toc

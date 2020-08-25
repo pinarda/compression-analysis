@@ -116,7 +116,7 @@ function[] = dailyRainfall_oddsRain_smallThreshold(save_dir, data_dir)
             C2 = colorbar('southoutside', 'FontSize', 10);
 
             if strcmp(tol, '1e-2') || strcmp(tol, '0.01')
-                text(4, 3.25, compress_alg, 'FontSize', 15);
+                text(4, 3.25, upper(compress_alg), 'FontSize', 12,'interpreter','latex');
                 title('log10(odds)')
             end
 

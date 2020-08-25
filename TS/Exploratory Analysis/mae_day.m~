@@ -36,13 +36,13 @@ function[] = mae_day(diff_datas, alg_prefix_list, tol_list_sz, tol_list_zfp, nLo
             save_plot(k) = plot(log10(mae_daily), 'Color', linespec{k}, 'LineWidth', width{k}, 'LineStyle', style{k});
             xlim([1 365])
             hold on
-            legendInfo{k}= [upper(compress_alg), tol];
+            legendInfo{k}= [compress_alg, tol];
             k = k + 1;
         end
     end
 
     %%
-    lgd = legend(save_plot,legendInfo, "Location", "eastoutside",'interpreter','latex');
+    lgd = legend(save_plot,legendInfo, "Location", "eastoutside");
     %set(lgd,'Position',get(lgd,'Position')-[0 .14 0 0]);
     fig = gcf;
     set(gcf,'Units', 'inches', 'Position', [0 0 8 4], 'PaperUnits','inches','PaperPosition', [0 0 8 4])

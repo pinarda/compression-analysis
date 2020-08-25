@@ -67,7 +67,7 @@ function[] = pctRainy(orig_data, compress_datas, alg_prefix_list, N, save_dir)
     ylim([0 1])
     ylabel("% rainy days")
     xlabel("day")
-    title('sz')
+    title('SZ','interpreter','latex')
 
     subplot(2,4,2), plot(seaspctRainy_orig, '+-k', 'MarkerSize', 10, 'LineWidth', 2, 'MarkerIndices', 1:30:365); hold on
     for k = 1:length(tol_list_zfp)
@@ -76,7 +76,7 @@ function[] = pctRainy(orig_data, compress_datas, alg_prefix_list, N, save_dir)
     xlim([1 365])
     ylim([0 1])
     xlabel("day")
-    title('zfp')
+    title('ZFP', 'interpreter','latex')
     subplot(2,4,2), legend(['Original', tol_list_zfp], 'Location', 'West')
 
     subplot(2,4,3), plot(seaspctRainy_orig, '+-k', 'MarkerSize', 10, 'LineWidth', 2, 'MarkerIndices', 1:30:365); hold on
@@ -86,7 +86,7 @@ function[] = pctRainy(orig_data, compress_datas, alg_prefix_list, N, save_dir)
     xlim([1 365])
     ylim([0.80 1])
     xlabel("day")
-    title('sz')
+    title('SZ','interpreter','latex')
     text(340, 1.01, 'Zoomed-in', 'FontSize', 15)
 
     subplot(2,4,4), plot(seaspctRainy_orig, '+-k', 'MarkerSize', 10, 'LineWidth', 2, 'MarkerIndices', 1:30:365); hold on
@@ -96,7 +96,7 @@ function[] = pctRainy(orig_data, compress_datas, alg_prefix_list, N, save_dir)
     xlim([1 365])
     ylim([0.80 1])
     xlabel("day")
-    title('zfp')
+    title('ZFP','interpreter','latex')
 
 
     subplot(2,4,5), plot(logOR_sz(:,1), strcat( Markers{1}, '-', Colors{1}), 'MarkerSize', 7, 'MarkerIndices', 1:30:365); hold on
@@ -109,7 +109,7 @@ function[] = pctRainy(orig_data, compress_datas, alg_prefix_list, N, save_dir)
     ylim([-4 0.5])
     ylabel("Log10(Odds Ratio)")
     xlabel("day")
-    title('sz')
+    title('SZ','interpreter','latex')
 
     subplot(2,4,6), plot(logOR_zfp(:,1), strcat( Markers{1}, '-', Colors{1}), 'MarkerSize', 7, 'MarkerIndices', 1:30:365); hold on
     if(length(tol_list_zfp) > 1)
@@ -120,7 +120,7 @@ function[] = pctRainy(orig_data, compress_datas, alg_prefix_list, N, save_dir)
     xlim([1 365])
     ylim([-4 0.5])
     xlabel("day")
-    title('zfp')
+    title('ZFP','interpreter','latex')
 
     set(gcf,'Units', 'inches', 'Position', [0 0 12 8], 'PaperUnits','inches','PaperPosition', [0 0 12 8])
 

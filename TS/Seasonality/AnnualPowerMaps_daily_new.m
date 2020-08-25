@@ -86,7 +86,7 @@ function AnnualPowerMaps_daily_new(diff_datas, alg_prefix_list, tol_list_sz, tol
                 text(-4.8, 0, char(tol), 'FontSize', 15);
             end
             if strcmp(tol, char(tol_list(1)))
-                text(-0.1, 2.5, compress_alg, 'FontSize', 15);
+                text(-0.1, 2.5, upper(compress_alg), 'FontSize', 12,'interpreter','latex');
             end
             disp([alg_prefix, tol_list{tol_j}])
         end

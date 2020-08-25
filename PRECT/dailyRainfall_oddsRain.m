@@ -87,7 +87,7 @@ function[] = dailyRainfall_oddsRain(orig_data, compress_datas, alg_prefix_list, 
             C2 = colorbar('southoutside', 'FontSize', 10);
 
             if strcmp(tol, '1e-2') || strcmp(tol, '0.01')
-                text(4, 3.25, compress_alg, 'FontSize', 15);
+                text(4, 3.25, upper(compress_alg), 'FontSize', 12,'interpreter','latex');
                 title('log10(odds)')
             end
 
@@ -132,6 +132,7 @@ function[] = dailyRainfall_oddsRain(orig_data, compress_datas, alg_prefix_list, 
         end
     end
 
+    set(gcf,'Units', 'inches', 'Position', [0 0 8 8], 'PaperUnits','inches','PaperPosition', [0 0 8 8])
     save_path_OR = [save_dir, 'OR_array_new.png'];
     print(save_path_OR, '-dpng', '-r300')
     close

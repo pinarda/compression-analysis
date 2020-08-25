@@ -53,7 +53,7 @@ for i=1:length(alg_prefix_list)
 end
 
 input.dataFormat = {'%.15f'}
-input.data =  [mean_ts_array(:) mean_error_array(:) mae_array(:) rmse_array(:), max_array(:)];
+input.data =  [mean_ts_array(:) mean_error_array(:) mae_array(:) rmse_array(:)];
 input.tableColLabels = {'Mean', 'Mean Error','MAE','RMSE', 'Max Error'};
 input.tableRowLabels = compression_array;
 input.tableCaption = 'Summary Statistics of TS';

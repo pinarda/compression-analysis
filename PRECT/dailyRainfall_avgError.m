@@ -86,7 +86,7 @@ function[] = dailyRainfall_avgError(save_dir, data_dir)
                     text(-4.5, 0, char(tol));
                 end
                 if (j == 1)
-                    text(0, 2.5, compress_alg);
+                    text(0, 2.5, upper(compress_alg),'FontSize', 12','interpreter','latex');
                 end
             end
         end

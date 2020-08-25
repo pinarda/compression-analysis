@@ -14,22 +14,22 @@ function[] = TwoLocations_seasonalPlot(orig_data, compress_datas, alg_prefix_lis
     anCycle_orig_szLoc = mean(reshape(squeeze(orig_data(sz_lonInd, sz_latInd,:)),365,[]),2);
 
 
-    subplot(2,2,2)
+    subplot(2,2,1)
     plot(1:365, anCycle_orig_zfpLoc, 'k', 'LineWidth', 2)
     xlim([1 365])
     xlabel('Day')
-    ylabel('TS')
+    ylabel('TS, zfp')
     title(['Lon ', num2str(model_lon(zfp_lonInd)), ...
-        ' Lat ', num2str(round(model_lat(zfp_latInd),2)), ', ZFP'],'interpreter','latex')
+        ' Lat ', num2str(round(model_lat(zfp_latInd),2))])
     hold on
 
-    subplot(2,2,1)
+    subplot(2,2,3)
     plot(1:365, anCycle_orig_szLoc, 'k', 'LineWidth', 2)
     xlim([1 365])
     xlabel('Day')
-    ylabel('TS')
+    ylabel('TS, sz')
     title(['Lon ', num2str(model_lon(sz_lonInd)), ...
-        ' Lat ', num2str(round(model_lat(sz_latInd),2)), ', SZ'],'interpreter','latex')
+        ' Lat ', num2str(round(model_lat(sz_latInd),2))])
     hold on
 
     % add zfp plots
@@ -44,7 +44,7 @@ function[] = TwoLocations_seasonalPlot(orig_data, compress_datas, alg_prefix_lis
         standardized_zfpLoc = (anCycle_resid_zfpLoc - mean(anCycle_resid_zfpLoc)) ./ ...
                             std(anCycle_resid_zfpLoc);
 
-        subplot(2,2,2)
+        subplot(2,2,3)
         plot(1:365, anCycle_compress_zfpLoc, strcat('-',Markers{tol_j}), 'MarkerIndices', 1:30:365); hold on
 
         subplot(2,2,4)
@@ -53,7 +53,7 @@ function[] = TwoLocations_seasonalPlot(orig_data, compress_datas, alg_prefix_lis
         xlabel('Day')
         ylabel('Error (standardized)')
         title(['Lon ', num2str(model_lon(sz_lonInd)), ...
-        ' Lat ', num2str(round(model_lat(sz_latInd),2)), ', \textsc{zfp}'],'interpreter','latex')
+        ' Lat ', num2str(round(model_lat(sz_latInd),2)), ', zfp'])
     end
 
     % add sz plots
@@ -71,21 +71,19 @@ function[] = TwoLocations_seasonalPlot(orig_data, compress_datas, alg_prefix_lis
         subplot(2,2,1)
         plot(1:365, anCycle_compress_szLoc,  strcat('-',Markers{tol_j}), 'MarkerIndices', 1:30:365); hold on
 
-        subplot(2,2,3)
+        subplot(2,2,2)
         plot(1:365, standardized_szLoc, strcat('-',Markers{tol_j}), 'MarkerIndices', 1:30:365); hold on
         xlim([1 365])
         xlabel('Day')
         ylabel('Error (standardized)')
-        title(['Lon ', num2str(model_lon(zfp_lonInd)), ...
-        ' Lat ', num2str(round(model_lat(zfp_latInd),2)), ', SZ'],'interpreter','latex')
     end
 
     subplot(2,2,1)
     legend(['Original', tol_list_zfp])
     hold off
-    subplot(2,2,3)
-    hold off
     subplot(2,2,2)
+    hold off
+    subplot(2,2,3)
     %legend(['Original', tol_list_sz])
     hold off
     subplot(2,2,4)
