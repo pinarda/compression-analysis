@@ -18,7 +18,7 @@ save_dir = '/glade/work/apinard/Save/';
 %% get TS paths
 
 % setup
-variable_list = {'TS','PRECT'};
+variable_list = {'TS', 'PRECT'};
 for i = 1:length(variable_list)
     variable = char(variable_list(i));
     algorithms = {'szAOn', 'zfpATOL'};
@@ -115,7 +115,7 @@ for i = 1:length(variable_list)
         days_vec = [1, 32, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
         mo_length_vec = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         for j = 1:length(days_vec)
-            %contrastVarianceNSTS_new(orig_data('orig'), compressed_data, algorithms, sz_tols_2(1:4), zfp_tols_2(1:4), nLat, nLon, obs, save_dir, days_vec(j), mo_length_vec(j))
+            contrastVarianceNSTS_new(orig_data('orig'), compressed_data, algorithms, sz_tols_2(1:4), zfp_tols_2(1:4), nLat, nLon, obs, save_dir, days_vec(j), mo_length_vec(j))
         end
     end
     if strcmp(variable, 'PRECT')
